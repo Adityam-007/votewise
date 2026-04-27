@@ -1,0 +1,372 @@
+.explainer-content section {
+  margin-bottom: 2.5rem;
+}
+
+.explainer-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--foreground);
+}
+
+.explainer-content p {
+  color: #64748b;
+  margin-bottom: 1rem;
+}
+
+.info-box {
+  display: flex;
+  gap: 1rem;
+  padding: 1.25rem;
+  border-radius: var(--radius);
+  background: rgba(245, 158, 11, 0.05);
+  border: 1px solid rgba(245, 158, 11, 0.2);
+  margin: 1.5rem 0;
+}
+
+.info-box .icon {
+  color: var(--accent);
+  flex-shrink: 0;
+}
+
+.check-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.check-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: #475569;
+}
+
+.check-list li svg {
+  color: #10b981;
+}
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.step {
+  position: relative;
+  padding-top: 2.5rem;
+}
+
+.step-num {
+  position: absolute;
+  top: -1rem;
+  left: 1.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: var(--primary);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  box-shadow: 0 4px 10px rgba(59, 130, 246, 0.3);
+}
+
+/* Simulation */
+.sim-box {
+  margin-top: 2rem;
+  text-align: center;
+  padding: 3rem;
+  background: #f8fafc;
+}
+
+.sim-icon {
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+}
+
+.sim-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+/* Quiz */
+.quiz-intro {
+  text-align: center;
+  padding: 2rem;
+}
+
+.quiz-question {
+  margin-bottom: 2rem;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.option-label {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.option-label:hover {
+  background: rgba(59, 130, 246, 0.05);
+  border-color: var(--primary);
+}
+
+.option-label input[type="radio"] {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.quiz-results {
+  text-align: center;
+  padding: 3rem;
+  background: #f0fdf4;
+  border-color: #bbf7d0;
+}
+
+.id-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.id-type {
+  text-align: center;
+  padding: 2rem;
+}
+
+.id-icon {
+  color: var(--primary);
+  margin-bottom: 1rem;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.id-options-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+}
+
+.id-option {
+  padding: 1.5rem;
+  text-align: center;
+  transition: all 0.2s;
+}
+
+.id-option:hover {
+  border-color: var(--primary);
+  background: rgba(59, 130, 246, 0.05);
+}
+
+.id-option h4 {
+  margin-bottom: 0.5rem;
+}
+
+.id-option span {
+  font-size: 0.75rem;
+  color: #64748b;
+}
+
+.profile-sim {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.profile-avatar {
+  width: 3.5rem;
+  height: 3.5rem;
+  background: var(--secondary);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 1.25rem;
+}
+
+.profile-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.profile-item {
+  padding: 0.75rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.875rem;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.ballot-sim {
+  background: white;
+  padding: 2rem;
+  border: 2px solid #334155;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.ballot-header {
+  text-align: center;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid #334155;
+  padding-bottom: 1rem;
+}
+
+.ballot-race {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  border: 1px solid var(--border);
+}
+
+.highlight-zone:hover {
+  border-color: var(--primary);
+  background: rgba(59, 130, 246, 0.05);
+}
+
+.ballot-race h5 {
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.ballot-options {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.ballot-option {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 0.875rem;
+}
+
+.bubble {
+  width: 1.25rem;
+  height: 1.25rem;
+  border: 2px solid #334155;
+  border-radius: 50%;
+}
+
+.measure-text {
+  font-size: 0.75rem;
+  color: #64748b;
+  margin-bottom: 0.75rem;
+  font-style: italic;
+}
+
+.sim-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  text-align: left;
+}
+
+.sim-step-item {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.sim-step-badge {
+  width: 2rem;
+  height: 2rem;
+  background: var(--primary);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  flex-shrink: 0;
+}
+
+.sim-step-text h5 {
+  margin-bottom: 0.25rem;
+  font-size: 1rem;
+}
+
+.results-sim {
+  padding: 2rem;
+  text-align: left;
+}
+
+.sim-group {
+  margin-bottom: 2rem;
+}
+
+.sim-group h5 {
+  margin-bottom: 0.75rem;
+}
+
+.sim-bar-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.sim-bar {
+  height: 1.5rem;
+  background: var(--primary);
+  border-radius: 999px;
+}
+
+.sim-bar.popular {
+  height: 0.75rem;
+  opacity: 0.6;
+}
+
+.sim-bar.secondary {
+  background: var(--secondary);
+}
+
+.label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #64748b;
+  min-width: 100px;
+}
+
+.sim-result {
+  text-align: center;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+  color: var(--secondary);
+  font-size: 1.25rem;
+}
